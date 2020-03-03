@@ -32,7 +32,7 @@ var inItemText = document.getElementById("inItemText");
 inItemText.focus();
 inItemText.onkeyup = function (event) {
 
-    // Event.which (13) -> Enter content
+    // Event.which (13) -> 
 
 if (event.which == 13) {
  var itemText = inItemText.value
