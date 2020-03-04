@@ -9,6 +9,12 @@ li {
     background: #eee;
     padding: 5px 10px;
     color: #000;
+    
 }
-
-
+li span { 
+    padding-left: 10px; 
+    cursor: default;
+}
+.checked {
+text-decoration: line-through; font-weight: bold; color: #c00;
+}
