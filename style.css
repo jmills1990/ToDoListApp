@@ -1,14 +1,23 @@
-ul { 
-    list-style:none;
-    padding:0;
-    margin:0;
-    width: 300px;
+input, textarea {
+  background-color : #140D4F;
+  color: #6FEDB7;
 }
+
+
+.basicfontcolor {
+color: white;
+font-family:  'Raleway';
+
+}
+
+
+
 li {
-    border: 1px solid #ccc;
-    background: #eee;
-    padding: 5px 10px;
+    border: 1px solid #140D4F;
+    background: #4EA699;
+    padding: 3px 3px;
     color: #000;
+    list-style: none;
     
 }
 li span { 
@@ -33,17 +42,19 @@ html, body {
   height: 100%;
 }
 body {
+  background: #1D1F20;
+}
+.bodyclass {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: #1D1F20;
 }
 #box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
+  width: 800px;
   height: 200px;
   color: white;
   font-family: 'Raleway';
