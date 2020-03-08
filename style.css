@@ -1,23 +1,25 @@
-input, textarea {
-  background-color : #140D4F;
-  color: #6FEDB7;
+
+.container {
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -20px 0 50px;
+    left: 300px;
+    background-color: #028090;
 }
-
-
-.basicfontcolor {
-color: white;
-font-family:  'Raleway';
-
-}
-
-
-
 li {
     border: 1px solid #140D4F;
-    background: #4EA699;
-    padding: 3px 3px;
-    color: #000;
+    padding: 5px 5px;
+    width: 300px;
     list-style: none;
+    background-color: #00A896;
     
 }
 li span { 
@@ -36,59 +38,3 @@ text-decoration: line-through; font-weight: bold; color: #c00;
     margin: 20px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
-
-html, body {
-  height: 100%;
-}
-body {
-  background: #1D1F20;
-}
-.bodyclass {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-#box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 800px;
-  height: 200px;
-  color: white;
-  font-family: 'Raleway';
-  font-size: 1.5rem;
-}
-.gradient-border {
-  --borderWidth: 3px;
-  background: #1D1F20;
-  position: relative;
-  border-radius: var(--borderWidth);
-}
-.gradient-border:after {
-  content: '';
-  position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-  border-radius: calc(2 * var(--borderWidth));
-  z-index: -1;
-  animation: animatedgradient 3s ease alternate infinite;
-  background-size: 300% 300%;
-}
-
-
-@keyframes animatedgradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
