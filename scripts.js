@@ -1,3 +1,7 @@
+function removeAllItems() {
+var element = document.getElementByClass(buttonfont)
+element.parentNode.removeChild(element);
+}
 
 
 function updateItemStatus() {
@@ -43,6 +47,7 @@ function addNewItem(list, itemText) {
     checkBox.onclick = updateItemStatus;
 
 
+
     var span = document.createElement("span");
     span.id = "item_" + id;
     span.innerText = itemText;
@@ -81,12 +86,14 @@ inItemText.onkeyup = function (event) {
 
 // Client ID and API key from the Developer Console
 
+
+
 // Array of API discovery doc URLs for APIs used by the quickstart
 var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 
 // Authorization scopes required by the API; multiple scopes can be
 // included, separated by spaces.
-var SCOPES = "https://www.googleapis.com/auth/calendar";
+var SCOPES = "https://www.googleapis.com/auth/calendar.readonly";
 
 var authorizeButton = document.getElementById('authorize_button');
 var signoutButton = document.getElementById('signout_button');
@@ -136,8 +143,9 @@ function updateSigninStatus(isSignedIn) {
   }
 }
 
-//  Sign in the user upon button click.
-
+/**
+ *  Sign in the user upon button click.
+ */
 function handleAuthClick(event) {
   gapi.auth2.getAuthInstance().signIn();
 }
@@ -192,4 +200,3 @@ function listUpcomingEvents() {
     }
   });
 }
-
